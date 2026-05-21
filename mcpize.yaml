@@ -1,0 +1,22 @@
+# MCPize Configuration
+# Docs: https://mcpize.com/docs/mcpize-yaml
+
+version: 1
+
+name: "Security Headers"
+slug: "security-headers"
+
+runtime: typescript
+entry: "index.js"
+
+build:
+  install: "npm install"
+
+start:
+  type: stdio
+  command: "node"
+  args:
+    - "index.js"
+
+bridge:
+  mode: stdio
